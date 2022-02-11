@@ -77,3 +77,7 @@ body {
 	background-color: black;
 	font-size: 20px;
 }
+.copyright {
+    text-align: right;
+	border-bottom-right-radius: 20px;
+}

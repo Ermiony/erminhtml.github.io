@@ -30,7 +30,7 @@ body {
 
 .pocetnadiv a {
 	float: left;
-	color: grey;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -39,7 +39,7 @@ body {
 
 .pocetnadiv a:hover {
 	background-color: black;
-	color: grey;
+	color: white;
 	transform: scale(1.1);
 	background-color: #f7f7f7;
 	color: #a22274;
@@ -52,11 +52,15 @@ body {
 
 .pocetnadiv a:active {
 	background-color: grey;
-	color: grey;
+	color: white;
 	transform: scale(1);
 }
 
 .copyright {
 	text-align: right;
 	border-bottom-right-radius: 20px;
+}
+
+.pocetna {
+    color: darkseagreen;
 }
