@@ -1,0 +1,79 @@
+body {
+	background-image: url("blackground.jpg");
+	color: black;
+}
+
+.uvod {
+
+}
+
+.naslov {
+	color: blue;
+	font-size: 30px;
+	font-family: Arial;
+	padding-left: 15px;
+	text-shadow: 2px 3px purple;
+	letter-spacing: 2px;
+}
+
+.ikona {
+	float: right;
+	border-radius: 10px;
+    border-bottom: 5px;
+}
+
+
+.topnav {
+	min-width: 120px;
+	height: 36px;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: .1px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px #f7f7f7;
+	background-color: transparent;
+	color: #ffffff;
+	transition: all 200s ease-in-out;
+	width: 100%;
+	color: white;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;*/
+}
+
+.topnav a:hover {
+	background-color: black;
+	color: white;
+	transform: scale(1.1);
+	background-color: #f7f7f7;
+	color: #a22274;
+	font-weight: bold;
+	box-shadow: 0 0 0 2px #a22274;
+	letter-spacing: 1.1;
+	border-top-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+.topnav a:active {
+	background-color: white;
+	color: white;
+	transform: scale(1);
+}
+
+.lista {
+	color: black;
+	font-size: 20px;
+}
+
+.responsivename a:active {
+	background-color: black;
+	font-size: 20px;
+}
