@@ -11,7 +11,12 @@ body {
 	color: black;
 }
 
-.pocetnadiv {
+.copyright {
+	text-align: right;
+	border-bottom-right-radius: 20px;
+}
+
+.topnav {
 	min-width: 120px;
 	height: 36px;
 	font-size: 16px;
@@ -25,19 +30,23 @@ body {
 	color: #ffffff;
 	transition: all 200s ease-in-out;
 	width: 100%;
-	color: black;
+	color: white;
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.pocetnadiv a {
+.topnav a {
 	float: left;
-	color: black;
+	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;*/
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.pocetnadiv a:hover {
+.topnav a:hover {
 	background-color: black;
 	color: white;
 	transform: scale(1.1);
@@ -48,19 +57,14 @@ body {
 	letter-spacing: 1.1;
 	border-top-left-radius: 16px;
 	border-bottom-right-radius: 16px;
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.pocetnadiv a:active {
-	background-color: grey;
+.topnav a:active {
+	background-color: white;
 	color: white;
 	transform: scale(1);
-}
-
-.copyright {
-	text-align: right;
-	border-bottom-right-radius: 20px;
-}
-
-.pocetna {
-    color: darkseagreen;
+	overflow: hidden;
+	transition: 0.5s;
 }
