@@ -1,70 +1,70 @@
 body {
-	background-image: url("background.jpg");
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.pocetnadiv {
-	font-family: sans-serif;
-	background-color: black;
+input[type="checkbox"]
+{
+	-webkit-apperance: none;
+	visibility: hidden;
+	display: none;
 }
-
-.opisopisa {
-	color: black;
-}
-
-.copyright {
-	text-align: right;
-	border-bottom-right-radius: 20px;
-}
-
-.topnav {
-	min-width: 120px;
-	height: 36px;
-	font-size: 16px;
+.check {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: #092c3e;
 	cursor: pointer;
-	letter-spacing: .1px;
-	outline: none;
-	border: none;
-	border-radius: 2px;
-	box-shadow: 0 0 0 2px #f7f7f7;
-	background-color: transparent;
-	color: #ffffff;
-	transition: all 200s ease-in-out;
-	width: 100%;
-	color: white;
+	border-radius: 20px;
 	overflow: hidden;
-	transition: 0.5s;
+	transition: ease-in 0.5s;
 }
 
-.topnav a {
-	float: left;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;*/
-	overflow: hidden;
-	transition: 0.5s;
+input[type="checkbox"]:checked ~ .check {
+	background: #fff;
+	box-shadow: 0 0 0 1200px #092c3e;
 }
 
-.topnav a:hover {
-	background-color: black;
-	color: white;
-	transform: scale(1.1);
-	background-color: #f7f7f7;
-	color: #a22274;
-	font-weight: bold;
-	box-shadow: 0 0 0 2px #a22274;
-	letter-spacing: 1.1;
-	border-top-left-radius: 16px;
-	border-bottom-right-radius: 16px;
-	overflow: hidden;
-	transition: 0.5s;
+.check:before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background: #fff;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	transition: 1s;
 }
 
-.topnav a:active {
-	background-color: white;
-	color: white;
-	transform: scale(1);
-	overflow: hidden;
-	transition: 0.5s;
+input[type="checkbox"]:checked ~ .check:before {
+	transform: translateX(-50px);
+}
+
+.check:after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background: #092c3e;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	transition: 1s;
+	transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .check:after {
+	transform: translateX(0px);
+	color: black;
+	font-size: 30px;
+	font-family: Arial;
+	padding-left: 7px;
+	text-shadow: 2px 3px purple;
+	letter-spacing: 2px;
 }

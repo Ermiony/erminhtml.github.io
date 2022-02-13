@@ -3,15 +3,11 @@ body {
 	color: black;
 }
 
-.uvod {
-
-}
-
 .naslov {
 	color: blue;
 	font-size: 30px;
 	font-family: Arial;
-	padding-left: 15px;
+	padding-left: 7px;
 	text-shadow: 2px 3px purple;
 	letter-spacing: 2px;
 }
@@ -105,4 +101,10 @@ body {
 	.ikona {
 		display: block;
 	}
+}
+
+#icon {
+	float: right;
+	width: 30px;
+	cursor: pointer;
 }
