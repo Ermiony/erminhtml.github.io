@@ -3,6 +3,32 @@ body {
 	color: black;
 }
 
+.desno {
+	float: right;
+}
+
+.omeni {
+	margin-top: 20px;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.socijalne-mreze {
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: grey;
+	float: right;
+	position: center;
+}
+
+.github {
+	border-radius: 10px;
+	width: 10px;
+	height: 10px;
+}
+
 .naslov {
 	color: blue;
 	font-size: 30px;
@@ -13,8 +39,9 @@ body {
 }
 
 .ikona {
+	background-color: white;
 	float: right;
-	border-radius: 10px;
+	border-radius: 6px;
     border-bottom: 5px;
 }
 
@@ -107,4 +134,80 @@ body {
 	float: right;
 	width: 30px;
 	cursor: pointer;
+}
+
+.search-bar {
+	float: right;
+	padding-top: 8px;
+	padding-right: 8px;
+
+}
+
+/*@media only screen and (max-width: 1000px) {
+
+	.tekstovi {
+		float: left;
+		background-color: white;
+		width: 950px;
+		height: 800px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-left: 100px;
+	}
+}*/
+
+.tekstovi {
+	display: grid;
+	float: left;
+	background-color: white;
+	width: 752px;
+	height: 620px;
+	border-radius: 10px;
+	margin-top: 7px;
+	margin-left: 45px;
+	margin-bottom: 10px;
+	padding: 20px;
+	grid-template-columns: 100px 100px 100px 5px;
+	justify-content: space-around;
+}
+
+.grid1 {
+	width: 160px;
+	height: 100px;
+	background-color: darkgrey;
+	border-radius: 10px;
+}
+
+
+.grid2 {
+	width: 160px;
+	height: 100px;
+	background-color: darkgrey;
+	border-radius: 10px;
+}
+
+.grid3 {
+	float: right;
+	width: 160px;
+	height: 100px;
+	background-color: darkgrey;
+	border-radius: 10px;
+}
+
+p {
+	font-family: serif;
+}
+
+.naziv {
+	padding-left: 15px;
+	background-color: darkgrey;
+	border-radius: 10px;
+	font-family: serif;
+}
+
+.tekst {
+	padding-left: 7px;
+	background-color: darkgrey;
+	border-radius: 10px;
+	font-family: serif;
 }
