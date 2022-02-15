@@ -1,8 +1,24 @@
 body {
 	/*background-image: url("blackground.jpg");*/
 	color: black;
+}
+
+h1 {
 	color: var(--title-color);
 }
+h2 {
+	color: var(--title-color);
+}
+h3 {
+	color: var(--title-color);
+}
+h1 {
+	color: var(--title-color);
+}
+h5 {
+	color: var(--title-color);
+}
+
 
 .desno {
 	float: right;
@@ -228,6 +244,6 @@ p {
 @media (perfers-color-scheme: dark) {
 	:root {
 		--title-color: white;
-		--bkgd.color: black;
+		--bkgd-color: black;
 	}
 }
