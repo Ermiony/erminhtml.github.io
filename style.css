@@ -1,6 +1,7 @@
 body {
-	background-image: url("blackground.jpg");
+	/*background-image: url("blackground.jpg");*/
 	color: black;
+	color: var(--title-color);
 }
 
 .desno {
@@ -62,7 +63,7 @@ body {
 	width: 100%;
 	color: white;
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .topnav a {
@@ -73,7 +74,7 @@ body {
 	text-decoration: none;
 	font-size: 17px;*/
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .topnav a:hover {
@@ -88,7 +89,7 @@ body {
 	border-top-left-radius: 16px;
 	border-bottom-right-radius: 16px;
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .topnav a:active {
@@ -96,7 +97,7 @@ body {
 	color: white;
 	transform: scale(1);
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .lista {
@@ -107,12 +108,6 @@ body {
 .responsivename a:active {
 	background-color: black;
 	font-size: 20px;
-}
-.copyright {
-    text-align: right;
-	border-bottom-right-radius: 20px;
-	color: white;
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -210,4 +205,29 @@ p {
 	background-color: darkgrey;
 	border-radius: 10px;
 	font-family: serif;
+}
+
+.copydesno {
+	float: right;
+}
+
+.copydiv {
+	margin-top: 105px;
+	background-color: grey;
+	padding: 15px;
+	border-radius: 20px;
+	margin-right: 170px;
+}
+
+:root {
+	color-scheme: light-dark;
+	--title-color: black;
+	--bkgd-color: white;
+}
+
+@media (perfers-color-scheme: dark) {
+	:root {
+		--title-color: white;
+		--bkgd.color: black;
+	}
 }
