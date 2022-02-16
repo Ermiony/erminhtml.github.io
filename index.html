@@ -2,12 +2,16 @@
 <html lang=bs>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src=""></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device/width, initial-scale=1">
 	<title>Ermiony HTML-Sajt</title>
 	<link href="img/E-Code.png" rel="icon" type="image/x-icon">
 </head>
 <body>
+
+	<div id="preloader">Loading...</div>
+
 	<div class="uvod">
 		<h1 class="naslov" title="Ovo je sajt Pravljen u HTML-u">
 			<a href="https://www.youtube.com/channel/UC9JnkKXU1LH5ftYapFKvtmA" target="_blank"> 
@@ -63,9 +67,17 @@
 
 	<div class="copydesno">
 		<div class="copydiv">
-			<a href=https://www.instagram.com/_ermin.curtovic29/ class="copyright">&copy by Ermiony</a>
+			<a href=https://www.instagram.com/_ermin.curtovic29/ class="copyright" target="_blank">&copy by Ermiony 2022</a>
 		</div>
 
 	</div>
+
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
 </body>
 </html>
