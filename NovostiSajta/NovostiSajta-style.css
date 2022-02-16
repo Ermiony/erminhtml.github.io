@@ -1,5 +1,20 @@
 .update {
-	background-color: grey;
+	background: linear-gradient(to right, darkviolet, red);
 	color: black;
-	text-shadow: 2px 3px darkgrey;
+	margin-top: 8px;
+}
+
+.tekst {
+	font-size: 25;
+	margin-top: 12px;
+	background: linear-gradient(to right, skyblue, deeppink);
+}
+
+.developer {
+	margin-top: 130px;
+	padding: 6px;
+	border-radius: 22px;
+	background-color: transparent;
+	float: right;
+	position: center;
 }
