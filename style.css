@@ -1,5 +1,5 @@
 body {
-	background-image: url("blackground.jpg");
+	background: linear-gradient(rgba(0, 8, 51, 0.9),rgba(0, 8, 51, 0.9)),url("blackground.jpg");
 	color: black;
 }
 
