@@ -1,13 +1,36 @@
+body {
+	background-color: #111d29;
+}
+
 .update {
-	background: linear-gradient(to right, darkviolet, red);
+	background: skyblue;
 	color: black;
 	margin-top: 8px;
+	font-family: monospace;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 35ch;
+	animation: typing 5s steps(35), blink .5s step-end infinite alternate;
+	border-right: 3px black;
+	width: 35ch;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .tekst {
 	font-size: 25;
 	margin-top: 12px;
-	background: linear-gradient(to right, skyblue, deeppink);
+	background: skyblue;
 }
 
 .developer {
@@ -17,4 +40,9 @@
 	background-color: transparent;
 	float: right;
 	position: center;
+}
+
+svg {
+	position: absolute;
+	bottom: 0;
 }

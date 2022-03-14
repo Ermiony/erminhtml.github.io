@@ -1,18 +1,11 @@
 body {
 	background: linear-gradient(rgba(0, 8, 51, 0.9),rgba(0, 8, 51, 0.9)),url("blackground.jpg");
-	color: black;
+	color: #0e1538;
 }
 
 
 .desno {
 	float: right;
-}
-
-.omeni {
-	margin-top: 20px;
-	background-color: white;
-	padding: 15px;
-	border-radius: 10px;
 }
 
 .socijalne-mreze {
@@ -35,8 +28,32 @@ body {
 	font-size: 30px;
 	font-family: Arial;
 	padding-left: 7px;
-	text-shadow: 2px 3px purple;
+	text-shadow: 2px 3px black;
 	letter-spacing: 2px;
+}
+
+.omeni {
+	margin-top: 20px;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	font-family: monospace;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 5s steps(25), blink .5s step-end infinite alternate;
+	width: 35ch;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .ikona {
@@ -74,7 +91,7 @@ body {
 	text-decoration: none;
 	font-size: 17px;*/
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 
@@ -91,15 +108,16 @@ body {
 	border-top-left-radius: 16px;
 	border-bottom-right-radius: 16px;
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.5s;
 }
+
 
 .topnav a:active {
 	background-color: white;
 	color: white;
 	transform: scale(1);
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 .lista {
