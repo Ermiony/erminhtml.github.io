@@ -1,85 +1,55 @@
 <!DOCTYPE html>
-<html lang=bs>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src=""></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="HandheldFriendly" content="true">
-	<title>Ermiony HTML-Sajt</title>
-	<link href="img/E-Code.png" rel="icon" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" class="btn">Explore</a>
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scroling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex aperiam sapiente adipisci dicta veniam nihil laborum repellendus, ipsa incidunt repudiandae quod. Amet odit deleniti deserunt officiis explicabo, cupiditate dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas recusandae, dolores dolore tempora quis aliquam eaque inventore blanditiis ut eum nam sit in quae tenetur nobis sapiente! Omnis, eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa vel unde quis quae ratione nulla tempora voluptatem accusantium iusto, quidem fuga aut reiciendis sapiente voluptas dolorem? Molestias sed eius quia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis voluptatum expedita, doloribus quas at debitis eaque illo voluptatibus provident facilis, qui eius aliquam ut aut odit minus praesentium eligendi assumenda?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi tempore veritatis sit repellendus alias incidunt quasi eum reprehenderit reiciendis dolor aperiam autem, voluptatum nemo est accusantium ipsa blanditiis quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi expedita quasi maiores neque unde soluta id, autem nisi, velit recusandae dolor ex quis at totam vero iusto fuga incidunt ipsam?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex aperiam sapiente adipisci dicta veniam nihil laborum repellendus, ipsa incidunt repudiandae quod. Amet odit deleniti deserunt officiis explicabo, cupiditate dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas recusandae, dolores dolore tempora quis aliquam eaque inventore blanditiis ut eum nam sit in quae tenetur nobis sapiente! Omnis, eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa vel unde quis quae ratione nulla tempora voluptatem accusantium iusto, quidem fuga aut reiciendis sapiente voluptas dolorem? Molestias sed eius quia?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex aperiam sapiente adipisci dicta veniam nihil laborum repellendus, ipsa incidunt repudiandae quod. Amet odit deleniti deserunt officiis explicabo, cupiditate dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas recusandae, dolores dolore tempora quis aliquam eaque inventore blanditiis ut eum nam sit in quae tenetur nobis sapiente! Omnis, eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa vel unde quis quae ratione nulla tempora voluptatem accusantium iusto, quidem fuga aut reiciendis sapiente voluptas dolorem? Molestias sed eius quia?</p>
+    </div>
 
-	<div id="preloader"></div>
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+        let header = document.querySelector("header");
 
-	<div class="uvod">
-		<h1 class="naslov" title="Ovo je sajt Pravljen u HTML-u">
-			<a href="https://www.youtube.com/channel/UC9JnkKXU1LH5ftYapFKvtmA" target="_blank"> 
-			<img class="ikona" src="img/youtube.svg" width="40" height="40" title="Moj YouTube Kanal">
-			</a>Ermin HTML</h1>
-	</div>
-	<div class="topnav">
-		<a href class="index.html" title="Pocetna">Pocetna</a>
-		<a href="NovostiSajta/NovostiSajta.html" title="Novosti Sajta">NovostiSajta</a>
-		<a href="KKH/KKH.html" title="KKH">Gledajte-KKH</a>
-		<a href="NMK/NMK.html" title="NMK">Gledajte-NMK</a>
-		<a href="LZN/LZN.html" title="LZN">Gledajte-LZN</a>
-		<a href="https://www.github.com/Ermiony/erminhtml.github.io/wiki"target="_blank">WikipediaSajta
-		<a href="Ostalo/dannezavisnosti.rar"download="1mart">1.mart</a>
-
-		<div class="search-bar">
-			<input type="text" name="search" placeholder="Search...">
-			<button type="submit">Submit</button>
-		</div>
-	</div>
-
-
-	<div class="tekstovi">
-		<div class="grid1">
-			<h3 class="naziv">Sajt napravljen pomocu HTML-a i CSS-a</h3>
-			<img src="uskoro.jpg" class="programiranje"></img>
-			<p class="tekst">Sajt je pocet sa radom 9.2.2022 godine.Kao sajt za ucenje HTML-a i CSS-a.Uskoro Bi sajt trebao da dobije neke funkicje za koje su potrebni JavaScript i PHP.Jedna od Tih funkcija je vidljiva na sajtu a to je Search</p>
-		</div>
-		<div class="grid2">
-			<h3 class="naziv">Sajt napravljen pomocu HTML-a i CSS-a</h3>
-			<img src="uskoro.jpg" class="programiranje"></img>
-			<p class="tekst">Odradjeni gridovi na srednjem dijelu sajta</p>
-		</div>
-		<div class="grid3">
-			<h3 class="naziv">Sajt napravljen pomocu HTML-a i CSS-a</h3>
-			<img src="uskoro.jpg" class="programiranje"></img>
-			<p class="tekst">Odradjen Update v1.2.Glavni razlog update-a je bilo mjenjanje UI-a odnosno UserInterfejsa.Trenutni izgked sajta ce biti zadrzan.Predstavljamo vam Update v1.1</p>
-		</div>
-	</div>
-
-	<div class="desno">
-		<div class="omeni">
-			<h2>O Meni</h2>
-			<p>Moje Ime je Ermin Curtovic.<br>Dolazim iz Bihaća.<br>Trenutno Pohađam Elektro<br>Tehnicku-Školu u Bihaću.<br>Prvi sam razred.<br>Ovaj sajt je nastao kao<br>podloga za ucenje HTML-a<br>I nadam se da cu uspjeti biti<br> Web ili Mobile Developer</p>
-		</div>
-			
-		<div class="socijalne-mreze">
-			<h2>Follow Me</h2>
-			<a href="https://www.instagram.com/_ermin.curtovic29/" target="_blank"><center><img src="img/instagram.svg" width="50px" height="45px"></center></a><br>
-			<a href="https://www.github.com/Ermiony" class="github" target="_blank"><center><img src="img/github.svg" width="50px" height="45px"></center></a>
-		</div>
-	</div>
-
-	<div class="copydesno">
-		<div class="copydiv">
-			<a href=https://www.instagram.com/_ermin.curtovic29/ class="copyright" target="_blank" title="Copyright">&copy by Ermiony 2022</a>
-		</div>
-
-	</div>
-
-	<script>
-		var loader = document.getElementById("preloader");
-
-		window.addEventListener("load", function(){
-			loader.style.display = "none";
-		})
-	</script>
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + "px";
+            moon.style.top = value * 1.05 + "px";
+            mountains_behind.style.top = value * 0.5 + "px";
+            mountains_front.style.top = value * 0 + "px";
+            text.style.marginRight = value * 4 + "px";
+            text.style.marginTop = value * 1.5 + "px";
+            btn.style.marginTop = value * 1.5 + "px";
+            header.style.top = value * 1.5 + "px";
+        })
+    </script>
 </body>
 </html>
