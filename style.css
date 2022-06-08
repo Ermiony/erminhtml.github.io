@@ -92,7 +92,7 @@ body {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;*/
+	font-size: 17px;
 	overflow: hidden;
 	transition: 0.5s;
 }
@@ -133,7 +133,7 @@ body {
 	font-size: 20px;
 }
 
-@media only screen and (min-width: 480px max-width: 1280) {
+@media only screen and (max-width:600px) {
 	.topnav{
 		width: 100%;
 		background-color: transparent;
@@ -141,10 +141,20 @@ body {
 		top: 75px;
 		right: 0px;
 		z-index: 2;
+		font-size: 8px;
 	}
 
 	.ikona {
 		display: block;
+	}
+
+	.desno {
+		font-size: 8px;
+	}
+
+	.omeni{
+		font-size: 8px;
+		width: 100%;
 	}
 }
 
